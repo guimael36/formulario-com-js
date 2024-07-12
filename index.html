@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest - Formulário com validação</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="duvidas">
+        <h1>FICOU COM DÚVIDA?<br> NOS MANDE UMA MENSAGEM!</h1>
+        <P>caso tenha ficado com qualquer dúvida<br> basta nos mandar uma mensagem e<br> entraremos em contato em menos de 24h.</P>
+    </div>
+
+    <div class="formulario">
+    <form action="index.html">
+        <input type="text" name="nome" id="nome" placeholder="Nome completo *" required><br>
+        <span class="erro"><p>campo obrigatório</p></span>
+        <input type="email" name="email" id="email" placeholder="Email *" required><br>
+        <span class="erro"><p>campo obrigatório</p></span>
+        <input type="number" name="telefone" id="telefone" placeholder="Telefone *" required class="input-number"><br>
+        <span class="erro"><p>campo obrigatório</p></span>
+        <input type="text" name="mensagem" id="mensagem" placeholder="Mensagem *" required>
+        <span class="erro"><p>campo obrigatório</p></span>
+    </form>
+
+    <p>* campos obrigatórios</p>
+
+    <button id="button">Enviar</button>
+</div>
+</main>
+
+<script src="script.js"></script>    
+</body>
+</html>
