@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body{
-    background-image: url(./src/images/bg-repeat.jpg);
+    background-image: url(../../src/images/bg-repeat.jpg);
     background-repeat: repeat;
     background-size: contain;
+    background-position: center;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -118,4 +119,70 @@ span{
 
 .erro:nth-last-child(1){
     margin: 0;
+}
+
+/* responsivo */
+
+@media (max-width: 1025px){
+    .duvidas{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 839px){
+    .duvidas{
+        margin-left: 25px;
+    }
+
+    .formulario{
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 687px){
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .duvidas{
+        margin-top: 50px;
+        width: 300px;
+        min-height: 111px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0.1%;
+        margin-bottom: 20px;
+    }
+
+    .formulario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 340px;
+        height: 378px;
+        margin: 0;
+    }
+
+    input {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 321px){
+    .formulario{
+        width: 300px;
+    }
+    
+    input{
+        width: 258px;
+        margin-left: 0px;
+    }
+
+    button{
+        width: 248px;
+        margin-right: 18px;
+    }
 }
